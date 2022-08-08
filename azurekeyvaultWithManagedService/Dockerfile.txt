@@ -1,0 +1,5 @@
+FROM openjdk:11
+WORKDIR /
+ADD azurekeyvaultWithManagedService-0.0.1-SNAPSHOT.jar azurekeyvaultWithManagedService.jar
+EXPOSE 8084
+ENTRYPOINT ["java", "-jar", "azurekeyvaultWithManagedService.jar"]
